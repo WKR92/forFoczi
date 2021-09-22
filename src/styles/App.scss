@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: salmon;
+  height: 100vh;
+}
+
+.nav-outer {
+  display: flex;
+  width: 100%;
+  position: relative;
+
+  .nav-left {
+    display: flex;
+    margin: auto;
+    position: relative;
+
+    .bg {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 66%;
+      left: 0;
+      background-color: salmon;
+      z-index: -1;
+      transition: .5s all ease;
+      border-top-left-radius: 35%;
+      border-top-right-radius: 35%;
+    }
+
+    .produkty {
+      cursor: pointer;
+      padding: 0 30px;
+      position: relative;
+    }
+
+    .przepisy {
+      cursor: pointer;
+      padding: 0 30px;
+    }
+
+    .dodatki {
+      cursor: pointer;
+      padding: 0 30px;
+    }
+  }
+
+  .nav-right {
+    position: absolute;
+    right: 5%;
+  }
+}
